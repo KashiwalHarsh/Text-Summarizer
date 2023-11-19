@@ -17,4 +17,4 @@ def new():
         return render_template('summary.html',summary=summary,originaltext=originaltext,len_o=len_o,len_s=len_s)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False,host='0.0.0.0')
