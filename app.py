@@ -7,6 +7,13 @@ app=Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route('/app',methods=['GET'])
+def application():
+    return render_template("app.html")
+
+@app.route('/about',methods=['GET'])
+def about():
+    return render_template("about.html")
 
 @app.route('/analyze', methods=['GET','POST'])
 def new():

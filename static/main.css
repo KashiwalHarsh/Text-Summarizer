@@ -7,9 +7,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f5f5f5;
+    height: 100vh;
     background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
 }
-
 
 .navbar {
     background-color: #ededed;
@@ -17,7 +17,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.cont {
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -74,56 +74,26 @@ body {
         margin-right: 0;
     }
 }
-.section{
-    margin-top: 50px;
-}
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
-.subtitle {
-    margin-bottom: 1rem;
-    font-size: 18px;
-    color: #868686;
-}
-
-.columns {
+.content{
     display: flex;
     justify-content: center;
-    background-color: #fff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 20px 0px 20px 0px;
-    /* margin-top: 50px; */
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
 }
-
-.column {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0 15px;
-}
-.split-line{
-    border-left: 1px solid #d6d6d6;
-}
-.box {
-    background-color: #fff;
-    padding: 15px;
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.textarea {
-    min-height: 200px;
-    border-radius: 8px;
-    width: 100%;
+.content-heading{
     padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    resize: vertical;
-    outline: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #484848;
 }
+.content-sub{
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #484848;
+}
+
 
 .button {
     border: none;
@@ -134,7 +104,8 @@ body {
     background-color: #178733;
     color: white;
 }
-.count{
+
+.count {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     font-weight: 600;
@@ -145,7 +116,8 @@ body {
     transform: scale(1.05);
 }
 
-.input-text,.output-text {
+.input-text,
+.output-text {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     color: grey;

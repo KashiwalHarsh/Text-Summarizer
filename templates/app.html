@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="cont">
+            <div class="title">Text-Summarizer</div>
+            <div>
+                <ul class="nav-links">
+                    <form action="/app" method="get" class="form">
+                        <button type="submit">Get Started</button>
+                    </form>
+                    <form action="https://github.com/KashiwalHarsh/Text-Summarizer" target="_blank" method="get" class="form">
+                        <button type="submit">Contribute</button>
+                    </form>
+                    <form action="/about" method="get">
+                        <button type="submit">About</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column"> 
+                    <div class="box input-box">
+                        <form action="/analyze" method="post">
+                            <h2 class="subtitle">Input Text</h2>
+                            <textarea name="rawtext" id="inputText" class="textarea" placeholder="Enter text to summarize"></textarea>
+                            <button id="summarizeBtn" class="button is-primary" type="submit">Summarize</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="column split-line">
+                    <div class="box output-box">
+                        <h2 class="subtitle">Summarized Text</h2>
+                        <p class="output-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
